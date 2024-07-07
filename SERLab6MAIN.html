@@ -1,0 +1,192 @@
+<!-- 
+Name: Sully Erkan-Rijos
+
+Lab: 6
+
+Class: CST 131
+ 
+Description:
+This is a Mad Libs story page. The default words comprise an actual story ive used so the story has a target audience of 
+people at the bar I nwould be mingling with and were story telling so this is a funny/cute story. The user can also input 
+their own words as provided in the table and modify the story to their whim using this table. user must press update story 
+to refelct the words initially or the changes.
+-->
+
+<html lang="en-US">
+
+ <head>
+ <meta charset="UTF-8">
+ 
+ <title> SULLY ERKAN-RIJOS - LAB 6 - MAD LIB STORY </title>
+ 
+  <link href="SERLab6MAIN_STYLE.css" text="text/css" rel="stylesheet">
+ </head>
+ 
+ 
+ 
+<body>
+    <header>
+	
+		<h1> Mad Lib Lab </h1>
+	
+        <h2>INSTRUCTIONS:</h2>
+		
+        <p>This is a Mad Lib Site. To fully utilize, user can input variables and press 
+			"Add xxxx" Button to add to selectable variables from the VALUES box and press "Update Story" Button to apply to story.
+			Or user can simply select one of the pre-loaded variables to insert into story and press "Update Story" Button.	</p>
+		
+    </header>
+
+
+		
+	<table id="userInputTable"> 
+		<thead>
+			<tr colspan="5">
+			
+				<th colspan="5" style="text-align: center;"> Select Values:  </th>
+			
+			</tr>		
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>         <!---------------------------------------------------------------------------------------------------- SPECIES -->
+		
+						<label for="newSpecies">Add New Species:</label>
+						<input type="text" id="newSpecies"> 
+						
+						<br><br>
+
+						<button onclick="addNewOption('speciesSelect', 'newSpecies')"> Add Species </button>
+						
+						<br><br>
+
+						<!------------------- SPECIES -->
+						<label for="speciesSelect">Species:</label>
+						<select id="speciesSelect">
+
+							<option value="Rabbit">Rabbit</option>
+							<option value="Cat">Cat</option>
+
+						</select>
+							<!---------------------------------------------------------------------------------------------------- SPECIES -->
+				</td>
+			
+				<td> 		        <!---------------------------------------------------------------------------------------------------- waterCraft -->
+						<label for="newwaterCraft">Add New Water Craft:</label>
+						<input type="text" id="waterCraft"> 
+						
+						<br><br>
+
+						<button onclick="addNewOption('waterCraftSelect', 'newwaterCraft')"> Add Water Craft </button>
+						
+						<br><br>
+
+						<label for="waterCraftSelect"> Water Craft: </label>
+						<select id="waterCraftSelect">
+
+							<option value="Kayak"> Kayak </option>
+							<option value="Canoe"> Canoe </option>
+
+						</select>
+		        <!---------------------------------------------------------------------------------------------------- waterCraft --> 
+				</td>
+				
+				<td> <!---------------------------------------------------------------------------------------------------- Weather -->
+						<label for="newwaterCraft">Add New Weather:</label>
+						<input type="text" id="weather"> 
+						
+						<br><br>
+
+						<button onclick="addNewOption('weatherSelect', 'newweather')"> Add Weather </button>
+						
+						<br><br>
+
+						<label for="weatherSelect"> Weather: </label>
+						<select id="weatherSelect">
+
+							<option value="Sunny"> Sunny </option>
+							<option value="Over Cast"> Over Cast </option>
+
+						</select>
+							<!---------------------------------------------------------------------------------------------------- Weather -->
+				</td>
+			
+				<td>  			<!---------------------------------------------------------------------------------------------------- ACTION -->
+						<label for="newaction">Add New Action:</label>
+						<input type="text" id="action"> 
+						
+						<br><br>
+
+						<button onclick="addNewOption('actionSelect', 'newaction')"> Add Action </button>
+						
+						<br><br>
+
+						<label for="actionSelect"> Action: </label>
+						<select id="actionSelect">
+
+							<option value="Jump"> Jump </option>
+							<option value="Fart"> Fart </option>
+
+						</select>
+							<!---------------------------------------------------------------------------------------------------- ACTION -->
+				</td>
+			
+				<td>  			<!---------------------------------------------------------------------------------------------------- OUTCOME -->
+						<label for="newoutcome">Add New Outcome:</label>
+						<input type="text" id="outcome"> 
+						
+						<br><br>
+
+						<button onclick="addNewOption('outcomeSelect', 'newoutcome')"> Add Outcome </button>
+						
+						<br><br>
+
+						<label for="outcomeSelect"> Outcome: </label>
+						<select id="outcomeSelect">
+
+							<option value="Succeeded"> Succeeded </option>
+							<option value="Failed"> Failed </option>
+
+						</select>
+							
+							<!---------------------------------------------------------------------------------------------------- OUTCOME -->
+				</td>	
+			</tr>
+			
+			<tr colspan="5">
+				<td colspan="5" style="text-align: center;">
+					<button onclick="updateStory()">Update Story</button>
+				</td>
+			</tr>
+			
+		</tbody>	
+	</table>	
+
+			
+			<br>
+
+
+
+
+    <div id="mainStory">
+        
+         <h1>The Story of Cookie</h1>
+		
+		   <p>So the story of Cookie begins. Cookie was a <span id="speciesSpan"></span>. </p>
+           <p> Cookie's owner took him out on the water on his <span id="waterCraftSpan"></span> one day. </p>
+           <p> The weather was <span id="weatherSpan"></span>. </p>
+           <p> Cookie was on board when he caught a look on his face, a look of a particular desire. </p> 
+		   <p> Cookie wanted to <span id="actionSpan"></span> ! </p>
+           <p> Cookie did as he pleased and <span id="outcomeSpan"></span>! </p> 
+		   <p> Regardless, Cookie always did as he pleased. </p>
+		   <p> In the end, Cookie made it back in one PIECE. </p>
+    </div> <!--mainStory-->
+
+
+<script> src="MadLibDemoSiteJS.js" </script>
+
+</body>
+
+ 
+ </html>

@@ -1,0 +1,44 @@
+/* COMMENT */
+
+body {
+    background-image: url('kayakBackGround.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+	padding: 20px;
+	margin: 0 auto;
+}
+
+
+header {
+	background-color: rgba(72, 0, 72, 0.5);
+/*	border: 2px solid black; */
+	padding: 20px;
+	margin: 20px;
+	text-align: center;
+	font-size: 30;
+}
+
+#userInputTable {
+	background-color: rgba(72, 0, 72, 0.5); 
+	padding: 20px;
+	margin: 20px;
+	font-size: 30;
+}
+
+#userInputTable th,
+#userInputTable td {
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	border-spacing: 10px;
+}
+
+#mainStory {
+	background-color: rgba(72, 0, 72, 0.5);
+/*	border: 2px solid black; */
+	padding: 20px;
+	margin: 20px;
+	text-align: center;
+	font-size: 30;
+}
