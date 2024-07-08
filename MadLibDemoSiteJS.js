@@ -1,4 +1,4 @@
-    <script>
+
         // Function to add new options to dropdown
         function addNewOption(selectId, textBoxId) {
             var select = document.getElementById(selectId);
@@ -32,4 +32,3 @@
 			document.getElementById("outcomeSpan").innerText = outcome;
 
         }
-    </script>
